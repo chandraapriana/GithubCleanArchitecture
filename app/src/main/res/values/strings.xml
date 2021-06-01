@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Github</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="logo_name">Github</string>
+    <string name="subtitle_repository">Repository</string>
+    <string name="subtitle_followers">Followers</string>
+    <string name="subtitle_following">Following</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="button_add">button add</string>
+    <string name="back">button back</string>
+    <string name="image_cover">image cover</string>
+    <string name="button_favorite_fragment">button favorite fragment</string>
+</resources>

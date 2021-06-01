@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.dynamic-feature'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+apply from: '../shared_dependencies.gradle'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.chandra.favorite"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":app")
+    implementation project(":core")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.10"
+
+}

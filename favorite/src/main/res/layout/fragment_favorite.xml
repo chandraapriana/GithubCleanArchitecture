@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".favorite.FavoriteFragment"
+    tools:ignore="Overdraw">
+
+    <ImageButton
+        android:id="@+id/btn_favorite_back"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg"
+        android:contentDescription="@string/back"
+        android:paddingEnd="12dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_vertical"
+        android:text="@string/title_favorite"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_favorite_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_favorite"
+
+     />
+
+    <TextView
+        android:id="@+id/tv_no_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/no_favorite"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
